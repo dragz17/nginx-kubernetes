@@ -15,7 +15,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: customnginx:latest
+        image: customnginx:1
         imagePullPolicy: Never
         ports:
         - containerPort: 80
+      imagePullSecrets:
+        - name: regcred
