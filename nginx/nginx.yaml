@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: customnginx:1
-        imagePullPolicy: Never
+        image: dragz17/nginx-test:1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
       imagePullSecrets:
